@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="/BMI Calculator/style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,600&family=Quattrocento+Sans&display=swap"
+  rel="stylesheet">
+ <title>BMI Calculator</title>
+</head>
+
+<body>
+ <div class="divTitle">
+   <h1 class="title">BMI Calculator</h1>
+   <h2 class="subtitle">To find out your BMI please enter your height (m) and mass (kg).</h2>
+   <h2 class="subtitle">The results are colour coded from blue to red to identify if your BMI is healthy or not.</h2>
+  <div class="container">
+   <div class="levelOneDiv">
+    <h2 class="low levelOne">Blue - Low BMI</h2>
+    <h2 class="normal levelTwo">Green - Normal BMI</h2>
+   </div>
+   <div class="levelTwoDiv">
+    <h2 class="high levelThree">Yellow - High BMI</h2>
+    <h2 class="veryHigh levelFour">Orange - Very High BMI</h2>
+   </div>
+   <div class="obese levelThreeDiv">
+    <h2 class="obese levelFive">Red - Obese BMI</h2>
+   </div>
+  </div>
+ </div>
+ <div class="divInput">
+  <h2 class="leftInputTitle inputTitle">Height (m)</h2><h2 class="rightInputTitle inputTitle">Mass (kg)</h2>
+  <input type="number" class="heightInput input"><input type="number" class="massInput input">
+  <br>
+  <button class="submitInput" onclick="calculateBMI()">Calculate</button>
+ </div>
+ <div class="divResultBMI"></div>
+</body>
+<script src="/BMI Calculator/main.js"></script>
+
+</html>
